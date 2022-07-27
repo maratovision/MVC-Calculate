@@ -13,7 +13,7 @@ class ReversePolishNotation {
             else {
                 if symbols.isEmpty {
                     symbols.append(String(array[i]))
-                } else {
+                }else {
                     if mathSignPriority(symbols.last!) < mathSignPriority(String(array[i])) {
                         symbols.append(String(array[i]))
                     } else {
